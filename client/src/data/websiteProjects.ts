@@ -5,7 +5,7 @@ export const websiteProjects: Project[] = [
     id: 'web-1',
     title: 'ACETRACK Event Attendance',
     description: 'A full-featured event attendance tracking platform with cart functionality and payment integration.',
-    image: './picture/Website/image.png',
+    image: '/picture/Website/image.png',
     category: 'Website',
     link: 'https://finalacetrack.vercel.app/',
     // github: '#',
