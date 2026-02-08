@@ -6,7 +6,6 @@ import Experience from './pages/Experience';
 import Projects from './pages/Projects';
 import Certificates from './pages/Certificates';
 import Social from './pages/Social';
-import Gallery from './pages/Gallery';
 import './App.css';
 
 function App() {
@@ -20,7 +19,6 @@ function App() {
           <Route path="projects" element={<Projects />} />
           <Route path="certificates" element={<Certificates />} />
           <Route path="social" element={<Social />} />
-          <Route path="gallery" element={<Gallery />} />
         </Route>
       </Routes>
     </Router>
