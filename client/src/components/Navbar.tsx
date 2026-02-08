@@ -36,7 +36,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="nav-container">
         <div className="nav-brand">
-          <span className="nav-logo">Portfolio</span>
+          <span className="nav-logo">Rob</span>
         </div>
 
         {/* Desktop Menu */}

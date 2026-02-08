@@ -1,4 +1,5 @@
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Heart } from 'lucide-react';
+import { SiFacebook } from 'react-icons/si';
 
 const About = () => {
   return (
@@ -7,7 +8,7 @@ const About = () => {
         <div className="hero-content">
           <div className="hero-text">
             <h1 className="hero-title">
-              Hi, I'm <span className="highlight">Your Name</span>
+              Hi, I'm <span className="highlight">Roberto Prisoris</span>
             </h1>
             <h2 className="hero-subtitle">
               Graphics Designer & Layout Artist
@@ -60,6 +61,21 @@ const About = () => {
             desired impact.
           </p>
         </div>
+      </div>
+
+      <div className="girlfriend-credit">
+        <Heart className="heart-icon" size={24} />
+        <h3>My Beautiful Girlfriend</h3>
+        <p>Thank you for always supporting and inspiring me</p>
+        <a 
+          href="https://www.facebook.com/ledehbuuug" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="btn btn-facebook"
+        >
+          <SiFacebook size={20} />
+          <span>Lady</span>
+        </a>
       </div>
     </div>
   );

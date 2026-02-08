@@ -1,71 +1,55 @@
-import { Github, Linkedin, Mail, Instagram, Twitter, Facebook, Dribbble, Globe } from 'lucide-react';
+import { SiGmail, SiBehance, SiInstagram, SiGithub, SiFacebook, SiTiktok } from 'react-icons/si';
 
 const Social = () => {
   const socialLinks = [
     {
       id: 1,
       name: 'Email',
-      icon: <Mail size={32} />,
-      username: 'your.email@example.com',
-      link: 'mailto:your.email@example.com',
+      icon: <SiGmail size={32} />,
+      username: 'roberto.proris@gmail.com',
+      link: 'mailto:roberto.proris@gmail.com',
       description: 'Get in touch for collaborations and inquiries',
-    },
-    {
-      id: 2,
-      name: 'LinkedIn',
-      icon: <Linkedin size={32} />,
-      username: '@yourusername',
-      link: 'https://linkedin.com/in/yourusername',
-      description: 'Connect with me professionally',
     },
     {
       id: 3,
       name: 'Behance',
-      icon: <Globe size={32} />,
-      username: '@yourusername',
-      link: 'https://behance.net/yourusername',
+      icon: <SiBehance size={32} />,
+      username: '@robertoprisori',
+      link: 'https://behance.net/robertoprisori',
       description: 'View my design portfolio and projects',
-    },
-    {
-      id: 4,
-      name: 'Dribbble',
-      icon: <Dribbble size={32} />,
-      username: '@yourusername',
-      link: 'https://dribbble.com/yourusername',
-      description: 'Check out my design shots and work',
     },
     {
       id: 5,
       name: 'Instagram',
-      icon: <Instagram size={32} />,
-      username: '@yourusername',
-      link: 'https://instagram.com/yourusername',
+      icon: <SiInstagram size={32} />,
+      username: '@me_robbb',
+      link: 'https://instagram.com/me_robbb',
       description: 'Follow my creative journey',
     },
     {
       id: 6,
       name: 'GitHub',
-      icon: <Github size={32} />,
-      username: '@yourusername',
-      link: 'https://github.com/yourusername',
+      icon: <SiGithub size={32} />,
+      username: '@JustRob12',
+      link: 'https://github.com/JustRob12',
       description: 'Explore my code and projects',
-    },
-    {
-      id: 7,
-      name: 'Twitter',
-      icon: <Twitter size={32} />,
-      username: '@yourusername',
-      link: 'https://twitter.com/yourusername',
-      description: 'Stay updated with my latest work',
     },
     {
       id: 8,
       name: 'Facebook',
-      icon: <Facebook size={32} />,
-      username: 'Your Name',
-      link: 'https://facebook.com/yourusername',
+      icon: <SiFacebook size={32} />,
+      username: 'Roberto Prisoris',
+      link: 'https://facebook.com/robertoprisoris',
       description: 'Connect on Facebook',
     },
+    {
+      id: 9,
+      name: 'TikTok',
+      icon: <SiTiktok size={32} />,
+      username: '@rj_works1208',
+      link: 'https://tiktok.com/@rj_works1208',
+      description: 'Stay updated with my latest work',
+    }
   ];
 
   return (

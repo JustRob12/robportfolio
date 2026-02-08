@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Instagram, Twitter } from 'lucide-react';
+import { Github, Facebook, Mail, Instagram, Twitter } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -7,24 +7,24 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-social">
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <a href="https://github.com/JustRob12" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <Github size={20} />
           </a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-            <Linkedin size={20} />
+          <a href="https://www.facebook.com/roberto.prisoris/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <Facebook size={20} />
           </a>
-          <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <a href="https://instagram.com/me_robbb" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
             <Instagram size={20} />
           </a>
-          <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+          {/* <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
             <Twitter size={20} />
-          </a>
-          <a href="mailto:your.email@example.com" aria-label="Email">
+          </a> */}
+          <a href="mailto:roberto.prisoris12@gmail.com" aria-label="Email">
             <Mail size={20} />
           </a>
         </div>
         <div className="footer-text">
-          <p>&copy; {currentYear} Your Name. All rights reserved.</p>
+          <p>&copy; {currentYear} Roberto Jr M Prisoris. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -3,55 +3,112 @@ import { Briefcase, Calendar } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
-      id: 1,
-      title: 'Senior Graphics Designer',
-      company: 'Creative Agency Inc.',
-      location: 'Metro Manila, Philippines',
-      period: '2022 - Present',
-      description: [
-        'Lead designer for major brand campaigns and marketing materials',
-        'Created visual identities for 20+ clients across various industries',
-        'Mentored junior designers and established design guidelines',
-        'Collaborated with marketing teams to develop cohesive brand strategies',
-      ],
-    },
-    {
       id: 2,
       title: 'Layout Artist',
-      company: 'Publishing House Co.',
-      location: 'Quezon City, Philippines',
-      period: '2020 - 2022',
+      company: 'PSYDO',
+      location: 'Davao Oriental, Philippines',
+      period: '2025',
       description: [
-        'Designed layouts for magazines, books, and digital publications',
-        'Worked closely with editors and writers to enhance visual storytelling',
-        'Managed multiple projects simultaneously with tight deadlines',
-        'Improved workflow efficiency by implementing new design processes',
+        'Creating visual layouts for various organizational publications and events',
+        'Ensuring brand consistency across all digital and print materials',
       ],
     },
     {
       id: 3,
-      title: 'Junior Graphic Designer',
-      company: 'Digital Media Studio',
-      location: 'Makati, Philippines',
-      period: '2018 - 2020',
+      title: 'PIO',
+      company: 'ACES',
+      location: 'Davao Oriental, Philippines',
+      period: '2024 - 2025',
       description: [
-        'Created social media graphics and digital marketing materials',
-        'Assisted in brand development and visual content creation',
-        'Collaborated with cross-functional teams on various projects',
-        'Developed skills in Adobe Creative Suite and design principles',
+        'Managing public information and communication strategies for the organization',
+        'Handling official announcements and community engagement',
+      ],
+    },
+    {
+      id: 1,
+      title: 'Web Development Head',
+      company: 'ACES',
+      location: 'Davao Oriental, Philippines',
+      period: '2023 - PRESENT',
+      description: [
+        'Leading the web development team in designing and implementing student-centered platforms',
+        'Managing project timelines and ensuring high-quality code delivery',
+        'Collaborating with other departments to integrate digital solutions',
       ],
     },
     {
       id: 4,
-      title: 'Freelance Designer',
-      company: 'Self-Employed',
-      location: 'Remote',
-      period: '2016 - 2018',
+      title: 'Government Internship Program',
+      company: 'Government',
+      location: 'Davao Oriental, Philippines',
+      period: '2023 - 2024',
       description: [
-        'Provided design services to small businesses and startups',
-        'Created logos, business cards, and marketing materials',
-        'Built a portfolio and established client relationships',
-        'Learned to manage projects and communicate with clients effectively',
+        'Assisting in administrative and technical tasks within the government office',
+        'Gaining experience in public service and governmental workflows',
+      ],
+    },
+    {
+      id: 5,
+      title: 'Layout Artist',
+      company: 'PESO DavOr',
+      location: 'Davao Oriental, Philippines',
+      period: '2022 - 2024',
+      description: [
+        'Designed promotional materials and layouts for employment programs',
+        'Developed visual content for social media and community outreach',
+      ],
+    },
+    {
+      id: 6,
+      title: 'Media Head',
+      company: 'ACES',
+      location: 'Davao Oriental, Philippines',
+      period: '2022 - 2024',
+      description: [
+        'Overseeing all media production and visual content for ACES',
+        'Coordinating with photographers and designers for event coverage',
+      ],
+    },
+    {
+      id: 7,
+      title: 'Web Dev. Member',
+      company: 'CODEBYTERS',
+      location: 'Davao Oriental, Philippines',
+      period: '2022 - 2024',
+      description: [
+        'Contributing to web development projects and collaborative coding sessions',
+        'Participating in tech workshops and community building',
+      ],
+    },
+    {
+      id: 10,
+      title: 'Media Head',
+      company: 'CODEBYTERS',
+      location: 'Davao Oriental, Philippines',
+      period: '2022 - 2023',
+      description: [
+        'Directing visual storytelling and media presence for the tech community',
+      ],
+    },
+    {
+      id: 9,
+      title: 'Media',
+      company: 'USC',
+      location: 'Davao Oriental, Philippines',
+      period: '2022 - 2023',
+      description: [
+        'Assisting in media coverage and content creation for university events',
+      ],
+    },
+    {
+      id: 8,
+      title: 'Photographer',
+      company: 'PESO DavOr',
+      location: 'Davao Oriental, Philippines',
+      period: '2022 - 2023',
+      description: [
+        'Capturing official events and program activities for documentation',
+        'Editing and archiving visual assets for the department',
       ],
     },
   ];
@@ -60,7 +117,7 @@ const Experience = () => {
     <div className="experience-page">
       <div className="page-header">
         <h1>Experience</h1>
-        <p>My professional journey in design and creativity</p>
+        <p>My professional journey in Davao Oriental, Philippines</p>
       </div>
 
       <div className="timeline">

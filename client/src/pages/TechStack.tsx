@@ -1,20 +1,21 @@
-import { Palette, Pen, Layout, Image, Type, Figma } from 'lucide-react';
+import { SiAdobephotoshop, SiAdobeillustrator, SiAdobeaftereffects, SiFigma, SiCanva, SiHtml5, SiReact, SiJavascript, SiTailwindcss, SiExpo} from 'react-icons/si';
 
 const TechStack = () => {
   const designTools = [
-    { name: 'Adobe Photoshop', icon: <Image size={32} />, category: 'Image Editing' },
-    { name: 'Adobe Illustrator', icon: <Pen size={32} />, category: 'Vector Graphics' },
-    { name: 'Adobe InDesign', icon: <Layout size={32} />, category: 'Layout Design' },
-    { name: 'Figma', icon: <Figma size={32} />, category: 'UI/UX Design' },
-    { name: 'CorelDRAW', icon: <Palette size={32} />, category: 'Vector Design' },
-    { name: 'Canva', icon: <Type size={32} />, category: 'Quick Design' },
+    { name: 'Adobe Photoshop', icon: <SiAdobephotoshop size={32} />, category: 'Image Editing' },
+    { name: 'Adobe Illustrator', icon: <SiAdobeillustrator size={32} />, category: 'Vector Graphics' },
+    { name: 'Adobe After Effects', icon: <SiAdobeaftereffects size={32} />, category: 'Layout Design' },
+    { name: 'Figma', icon: <SiFigma size={32} />, category: 'UI/UX Design' },
+    // { name: 'CorelDRAW', icon: <Palette size={32} />, category: 'Vector Design' },
+    { name: 'Canva', icon: <SiCanva size={32} />, category: 'Quick Design' },
   ];
 
   const webTools = [
-    { name: 'HTML/CSS', icon: <Layout size={32} />, category: 'Web Development' },
-    { name: 'JavaScript', icon: <Layout size={32} />, category: 'Programming' },
-    { name: 'React', icon: <Layout size={32} />, category: 'Framework' },
-    { name: 'Tailwind CSS', icon: <Palette size={32} />, category: 'Styling' },
+    { name: 'HTML/CSS', icon: <SiHtml5 size={32} />, category: 'Web Development' },
+    { name: 'JavaScript', icon: <SiJavascript size={32} />, category: 'Programming' },
+    { name: 'React', icon: <SiReact size={32} />, category: 'Framework' },
+    { name: 'Tailwind CSS', icon: <SiTailwindcss size={32} />, category: 'Styling' },
+    { name: 'Expo', icon: <SiExpo size={32} />, category: 'Mobile App Development' },
   ];
 
   const skills = [

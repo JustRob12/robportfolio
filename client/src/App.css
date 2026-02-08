@@ -346,6 +346,107 @@
   }
 }
 
+/* Girlfriend Credit Section */
+.girlfriend-credit {
+  margin-top: 4rem;
+  padding: 3rem 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(255, 182, 193, 0.1), rgba(255, 105, 180, 0.1));
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.girlfriend-credit::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 105, 180, 0.1) 0%, transparent 70%);
+  animation: pulse 4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+.girlfriend-credit .heart-icon {
+  color: #ff69b4;
+  margin-bottom: 1rem;
+  animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+.girlfriend-credit h3 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+  position: relative;
+  z-index: 1;
+}
+
+.girlfriend-credit p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.btn-facebook {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #1877f2;
+  color: white;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+}
+
+.btn-facebook:hover {
+  background-color: #166fe5;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(24, 119, 242, 0.3);
+}
+
+@media (max-width: 768px) {
+  .girlfriend-credit {
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+  }
+
+  .girlfriend-credit h3 {
+    font-size: 1.5rem;
+  }
+}
+
 /* ===========================================
    TECH STACK PAGE
    =========================================== */
@@ -680,6 +781,87 @@
 @media (max-width: 768px) {
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* ===========================================
+   PAGINATION
+   =========================================== */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.pagination-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  transition: all 0.2s ease;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background-color: var(--border);
+  transform: translateY(-2px);
+}
+
+.pagination-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination-number {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.pagination-number:hover {
+  background-color: var(--border);
+  transform: translateY(-2px);
+}
+
+.pagination-number.active {
+  background-color: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+/* Lightbox Info Extensions */
+.lightbox-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .pagination {
+    gap: 0.25rem;
+  }
+  
+  .pagination-btn, .pagination-number {
+    width: 36px;
+    height: 36px;
+    font-size: 0.875rem;
   }
 }
 
