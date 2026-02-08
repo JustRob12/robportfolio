@@ -6,8 +6,8 @@ const Social = () => {
       id: 1,
       name: 'Email',
       icon: <SiGmail size={32} />,
-      username: 'roberto.proris@gmail.com',
-      link: 'mailto:roberto.proris@gmail.com',
+      username: 'roberto.prisoris@gmail.com',
+      link: 'mailto:roberto.prisoris@gmail.com',
       description: 'Get in touch for collaborations and inquiries',
     },
     {
