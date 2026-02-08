@@ -19,8 +19,9 @@ const About = () => {
               graphic design, branding, and digital art.
             </p>
             <div className="hero-buttons">
-              <a href="#contact" className="btn btn-primary">
-                Get in Touch <ArrowRight size={18} />
+              <a href="/social" className="btn btn-primary">
+                Connect With Me <ArrowRight size={18} />
+               
               </a>
               <a href="/projects" className="btn btn-secondary">
                 View My Work
