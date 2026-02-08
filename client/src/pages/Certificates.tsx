@@ -51,7 +51,7 @@ const Certificates = () => {
               <p>{cert.description}</p>
               {/* {cert.link && (
                 <a href={cert.link} target="_blank" rel="noopener noreferrer" className="certificate-link">
-                  View Certificate <ExternalLink size={16} />
+                  View Certificate <ExternalLink size={16}/ />
                 </a>
               )} */}
             </div>

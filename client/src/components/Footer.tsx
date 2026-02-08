@@ -16,7 +16,7 @@ const Footer = () => {
           <a href="https://instagram.com/me_robbb" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
             <Instagram size={20} />
           </a>
-          {/* <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+          {/* <a href="https://twitter.com/youruse/rname" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
             <Twitter size={20} />
           </a> */}
           <a href="mailto:roberto.prisoris12@gmail.com" aria-label="Email">
