@@ -1,4 +1,4 @@
-import { Award, Calendar, ExternalLink } from 'lucide-react';
+import { Award, Calendar } from 'lucide-react';
 
 const Certificates = () => {
   const certificates = [
