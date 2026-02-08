@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { ArrowRight, Heart, ChevronLeft, ChevronRight } from 'lucide-react';
-import { SiFacebook } from 'react-icons/si';
+
 
 const About = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
