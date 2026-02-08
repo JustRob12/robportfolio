@@ -1371,8 +1371,9 @@
 
 .gallery-track {
   display: flex;
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* Transitions removed as per request */
 
 .gallery-slide-item {
   flex: 0 0 20%; /* Exactly 5 items */

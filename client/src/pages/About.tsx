@@ -3,8 +3,7 @@ import { ArrowRight, Heart, ChevronLeft, ChevronRight } from 'lucide-react';
 import { SiFacebook } from 'react-icons/si';
 
 const About = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const galleryImages = [
     { id: 1, image: '/picture/Gallery/1.jpg', alt: 'Personal photo 1' },
     { id: 2, image: '/picture/Gallery/2.jpg', alt: 'Personal photo 2' },
@@ -14,19 +13,17 @@ const About = () => {
     { id: 6, image: '/picture/Gallery/6.jpeg', alt: 'Personal photo 6' },
   ];
 
+  // For infinite scroll: triple the images to ensure seamless transition
+  const extendedImages = [...galleryImages, ...galleryImages, ...galleryImages];
+  const [currentIndex, setCurrentIndex] = useState(galleryImages.length);
+
   const nextSlide = () => {
-    // Only allow sliding if there are images beyond the visible 5
-    setCurrentSlide((prev) => (prev >= galleryImages.length - 5 ? 0 : prev + 1));
+    setCurrentIndex((prev) => (prev >= galleryImages.length * 2 - 5 ? galleryImages.length : prev + 1));
   };
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev === 0 ? galleryImages.length - 5 : prev - 1));
+    setCurrentIndex((prev) => (prev <= galleryImages.length ? galleryImages.length * 2 - 5 : prev - 1));
   };
-
-  useEffect(() => {
-    const timer = setInterval(nextSlide, 5000);
-    return () => clearInterval(timer);
-  }, []);
 
   return (
     <div className="about-page">
@@ -120,11 +117,15 @@ const About = () => {
           </button>
           <div className="gallery-viewport">
             <div 
-              className="gallery-track" 
-             
+              className="gallery-track"
+              style={{ transform: `translateX(-${currentIndex * (100 / 5)}%)` }}
             >
-              {galleryImages.map((image) => (
-                <div key={image.id} className="gallery-slide-item">
+              {extendedImages.map((image, index) => (
+                <div 
+                  key={`${image.id}-${index}`} 
+                  className="gallery-slide-item"
+                  onClick={() => setSelectedImage(image.image)}
+                >
                   <img src={image.image} alt={image.alt} />
                 </div>
               ))}
@@ -135,6 +136,15 @@ const About = () => {
           </button>
         </div>
       </div>
+
+      {selectedImage && (
+        <div className="lightbox" onClick={() => setSelectedImage(null)}>
+          <button className="lightbox-close" onClick={() => setSelectedImage(null)}>×</button>
+          <div className="lightbox-content" onClick={(e) => e.stopPropagation()}>
+            <img src={selectedImage} alt="Gallery Preview" />
+          </div>
+        </div>
+      )}
     </div>
   );
 };
